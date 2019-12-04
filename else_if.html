@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>js-3-1</title>
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+<style>
+div{
+	height:100px;
+	width:100px;
+	background:pink;
+	text-align:center;
+	font-size:30px;
+	margin:20px;
+	float:left;
+	font-family: 'Titillium Web', sans-serif;
+}
+button{
+	margin-top:100px;
+}
+#h1{
+	clear:left;
+}
+
+</style>
+</head>
+<body>
+<script>
+
+	
+function f2(){
+
+	j1=Math.floor(5*Math.random())
+	return j1 ;
+	
+}
+</script>
+<div id="g1"></div>
+<div id="g2"></div>
+<div id="g3"></div>
+<button id="b1" onclick="f1()">Generator</button>
+<div id="h1"></div>
+<div id="h2"></div>
+<div id="h3"></div>
+<script>
+    document.getElementById('g1').innerHTML=f2()
+	document.getElementById('g2').innerHTML=f2()
+	document.getElementById('g3').innerHTML=f2()
+
+function f1(){
+
+	document.getElementById('h1').innerHTML=f2();
+	document.getElementById('h2').innerHTML=f2();
+	document.getElementById('h3').innerHTML=f2();
+	
+	
+	var	a1=document.getElementById('h1').innerHTML;
+	var	a2=document.getElementById('h2').innerHTML;
+	var	a3=document.getElementById('h3').innerHTML;
+var c1=[a1,a2,a3]
+	var	x1=document.getElementById('g1').innerHTML;
+	var	x2=document.getElementById('g2').innerHTML;
+	var	x3=document.getElementById('g3').innerHTML;
+var c2=[x1,x2,x3]
+	c1[0]==c2[0] ? h1.style.background="green": h1.style.background="red";
+	c1[1]==c2[1] ? h2.style.background="green": h2.style.background="red";
+	c1[2]==c2[2] ? h3.style.background="green": h3.style.background="red";
+
+		
+		
+		
+		
+
+	
+}
+
+
+
+</script>
+</body> 
+</html>
